@@ -27,3 +27,6 @@ The current upload batch did not contain Soda Dispenser media, so that project u
 - GitHub profile and project repository links.
 - Custom domain.
 - Future ROS2 AMR project.
+
+## Voltron V3 source material
+The Voltron project page includes local portfolio media extracted from the original Critical Design Review plus the original CDR PowerPoint and project-description document under `assets/docs/voltron/`.
