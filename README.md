@@ -25,3 +25,18 @@ The Arduino project cards currently reference the existing Wix-hosted project im
 - Add GitHub profile/repository links.
 - Add a custom domain after the GitHub Pages version is live.
 - Add the future ROS2 AMR project as the new featured project.
+
+## Automated Wix media migration
+
+This version includes a one-time GitHub Actions workflow that downloads the discoverable images from the original Wix portfolio into `assets/images/` and commits them back to the repository.
+
+After uploading this site to the `main` branch:
+
+1. Open the repository's **Actions** tab.
+2. Open **Migrate Wix media**.
+3. If it did not start automatically from the first push, choose **Run workflow**.
+4. Wait for the workflow to finish and commit the images.
+
+The site already points to the local image paths, so after the workflow completes the Arduino project imagery no longer depends on Wix. The migration script is idempotent: it skips files that are already present.
+
+The original Voltron Wix page exposes its written project content but not the embedded PowerPoint/video media as direct downloadable image assets through the public page crawler, so those are not automatically copied here. Add those later if you have the original files or direct share links.
